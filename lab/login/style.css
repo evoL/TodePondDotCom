@@ -4,12 +4,80 @@
 
 html {
   --best-colour: #ffb843;
+  --best-colour-faded: #c58823;
+
+  --shade-0: #080501;
+  --shade-1: #141008;
+  --shade-2: #2b2920;
   --shade-3: #38372f;
   --shade-4: #484840;
+  --shade-5: #737871;
+  --shade-6: #909893;
+  --shade-7: #abb6b1;
+  --shade-8: #ccdbd8;
+  --shade-9: #dff1ee;
+  --shade-10: #ffffff;
+
+  --void: var(--shade-0);
+  --black: var(--shade-2);
+  --dark-grey: var(--shade-3);
+  --grey: var(--shade-5);
+  --light-grey: var(--shade-6);
+  --silver: var(--shade-8);
+  --white: var(--shade-10);
+
+  /** copied from todepond.com */
+  --green: rgb(70, 255, 129);
+  --cyan: rgb(70, 204, 255);
+  --blue: rgb(70, 128, 255);
+  --purple: rgb(128, 67, 255);
+  --pink: rgb(255, 128, 222);
+  --coral: rgb(255, 128, 128);
+  --red: rgb(255, 67, 70);
+  --orange: rgb(255, 128, 70);
+  --yellow: rgb(255, 255, 70);
+  --calm-yellow: rgb(255, 225, 70);
+  --light-blue: rgb(80, 140, 255);
+
+  --rainbow-1: var(--green);
+  --rainbow-2: var(--cyan);
+  --rainbow-3: var(--blue);
+  --rainbow-4: var(--purple);
+  --rainbow-5: var(--pink);
+  --rainbow-6: var(--coral);
+  --rainbow-7: var(--red);
+  --rainbow-8: var(--orange);
+  --rainbow-9: var(--yellow);
+
+  --background: #201c14;
+
+  --rainbow-gradient: linear-gradient(
+    /* slanted */ 135deg,
+    var(--green),
+    var(--cyan),
+    var(--light-blue),
+    var(--purple),
+    var(--pink),
+    var(--coral),
+    var(--red),
+    var(--orange),
+    var(--yellow),
+    var(--green),
+    var(--cyan),
+    var(--light-blue),
+    var(--purple),
+    var(--pink),
+    var(--coral),
+    var(--red),
+    var(--orange),
+    var(--yellow)
+  );
+
+  --glow: 0 0px 5px var(--best-colour), 0 0px 10px var(--best-colour);
 }
 
 body {
-  background-color: #201c14;
+  background-color: var(--background);
   color: #fff;
   font-family: sans-serif;
   max-width: 750px;
