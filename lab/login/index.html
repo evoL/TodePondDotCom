@@ -479,7 +479,7 @@
       p.appendChild(span);
       const img = document.createElement("img");
       img.className = "gif";
-      img.src = entry.gif ? `/image/${entry.gif}.gif` : "";
+      img.src = entry.gif ? `./${entry.gif}.gif` : "";
       img.style.display = entry.gif ? "block" : "none";
       p.appendChild(img);
       const div = document.createElement("div");
