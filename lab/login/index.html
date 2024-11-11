@@ -5,7 +5,7 @@
 <title>Logon</title>
 
 <link rel="shortcut icon" href="/static/favicon-32x32.png" />
-<link rel="stylesheet" href="./style.css" />
+<link rel="stylesheet" href="./style.css#v3" />
 
 <h1>Logon</h1>
 <a
@@ -140,7 +140,7 @@
               } />
             </label>
           ${
-            username === "TodePond"
+            username === "evol"
               ? `
                 <label for="admin-toggle">
                   Admin controls
@@ -414,7 +414,7 @@
 
       const span = status.querySelector("span");
       span.innerHTML = getHtmlFromMarkdown(entry.status);
-      if (entry.username === "TodePond") {
+      if (entry.username === "evol") {
         // protip: log from individual user
         // console.log(entry.status);
       }
@@ -518,7 +518,7 @@
 
   function maybeAddActions({ actionsElement, password, admin, entry }) {
     const enabled = localStorage.getItem("labLoginAdmin") === "true";
-    if (admin === "TodePond") {
+    if (admin === "evol") {
       const kickNameButton = document.createElement("button");
       kickNameButton.classList.add("action-button");
       // banButton.className = "danger";
@@ -783,7 +783,7 @@
   // loadingFeed.style.display = "none";
 
   const header = document.querySelector("header");
-  // if (usernameInput.value === "TodePond") {
+  // if (usernameInput.value === "evol") {
   // const spannn = document.createElement("span");
   // spannn.innerHTML = `
   //         <span style="float: right">
