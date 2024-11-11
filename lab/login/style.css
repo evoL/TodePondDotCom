@@ -2,6 +2,46 @@
 @import url("https://fonts.cdnfonts.com/css/restless-soul-bb");
 @import url("https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap");
 
+html {
+  --best-colour: #ffb843;
+  --shade-3: #38372f;
+  --shade-4: #484840;
+}
+
+body {
+  background-color: #201c14;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+a { 
+  color: #e9a332;
+}
+
+input[type="text"],
+input[type="password"] {
+  font: inherit;
+  width: 100%;
+}
+
+button {
+  appearance: none;
+  border: 0;
+  border-radius: 3px;
+  font: inherit;
+  line-height: 1.5;
+}
+
+button.primary {
+  background-color: #267fae;
+  color: #fff;
+}
+
+button.danger {
+  background-color: #953a34;
+  color: #fff;
+}
+
 /* =========== */
 /* Login stuff */
 /* =========== */
