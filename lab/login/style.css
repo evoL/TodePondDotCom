@@ -12,6 +12,9 @@ body {
   background-color: #201c14;
   color: #fff;
   font-family: sans-serif;
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 30px 10px;
 }
 
 a { 
